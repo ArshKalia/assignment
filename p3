@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string favoriteColor;
+        
+        while (true)
+        {
+            Console.Write("Please enter your favorite color (type 'stop' to exit): ");
+            favoriteColor = Console.ReadLine().ToLower(); // Convert input to lowercase for case-insensitivity
+            
+            if (favoriteColor == "stop")
+            {
+                break; // Exit the loop if the user types "stop"
+            }
+            
+            Console.WriteLine($"Your favorite color is {favoriteColor}");
+        }
+        
+        Console.WriteLine("Program has ended.");
+    }
+}
